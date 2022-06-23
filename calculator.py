@@ -2,12 +2,19 @@ One = float(input("The first number: "))
 Two = float(input("The second number: "))
 
 Three = input("Your action(+ or -): ")
-while True:
-  if Three == "+":
+
+if Three == "+":
     print("Results: ", (float(One + Two)))
-    break
-  elif Three == "-":
+elif Three == "-":
     print("Results: ", (float(One - Two)))
-    break  
-  else:
-    print("Again!")
+else:
+    while True:
+        print("Again!")
+        Three = input("Your action(+ or -): ")
+
+        if Three == "+":
+            print("Results: ", (float(One + Two)))
+            break
+        elif Three == "-":
+            print("Results: ", (float(One - Two)))
+            break  
