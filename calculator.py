@@ -1,5 +1,5 @@
-One = input("The first number: ")
-Two = input("The second number: ")
+One = float(input("The first number: "))
+Two = float(input("The second number: "))
 
 Three = input("Your action(+ or -): ")
 while True:
